@@ -1,0 +1,28 @@
+{
+  "name": "ejmnube",
+  "version": "1.0.0",
+  "description": "Proyecto desde la nube con gitpod-github y mongodb atlas",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darwinuzcategui1973/ejmnube.git"
+  },
+  "keywords": [],
+  "author": "Darwin Felipe Uzcategui Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darwinuzcategui1973/ejmnube/issues"
+  },
+  "homepage": "https://github.com/darwinuzcategui1973/ejmnube#readme",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}

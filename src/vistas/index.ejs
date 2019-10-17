@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Ejemplo en la NUbe con Gitpod</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/united/bootstrap.min.css">
+</head>
+
+<body>
+<div class="container p-3">
+<h1 class="text-center">Tarea Realizada</h1>
+
+
+	<div class="container p-2">
+		<div class="row">
+			<div class="col-md-4 offset-md-4">
+				<form action="/crear" method="post" class="card card-body">
+					<div class="form-group">
+						<input type="text" name="tarea" placeholder="Escriba Una tarea" class="form-control" autofocus>
+                    </div>
+                    <div class="form-group">
+						<input type="text" name="descripcion" placeholder="Escriba Una Descripcion" class="form-control">
+                    </div>
+                    <button class="btn btn-primary">
+                    Grabar
+                    </button>
+				</form>
+                <% tareasDB.forEach(function (tarea) {%>
+                <div class="card card-body">
+                    <h5><%=tarea.tarea %></h5>
+                    <p><%= tarea.descripcion%></p>
+
+			</div>
+            <% })%>
+		</div>
+	</div>
+</div>
+
+</body>
+
+</html>
